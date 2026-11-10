@@ -6,10 +6,11 @@ Pages use hash links (`#books`, `#terms`, ...), so everything works on GitHub Pa
 Live site: https://mutabazi3907-jpg.github.io/little-seeds-childrens-books/
 
 ## Deploy on GitHub Pages
-The repository is already set up (Settings > Pages > Deploy from a branch > `main` > `/ (root)`). To release an update:
-1. In the repository, choose Add file > Upload files.
-2. Drag the changed files straight from Finder or File Explorer. Do not open and re-save them in a text editor.
-3. Commit directly to `main`. The site updates in 1-3 minutes (the browser may cache pages for about 10 minutes, so hard-refresh).
+The site is published by GitHub Pages from the `main` branch (Settings > Pages > Deploy from a branch > `main` > `/ (root)`). Do not commit changes straight to `main`. To release an update:
+1. Create a branch (for example `my-update`) and make the changes there. Do not open and re-save images or PDFs in a text editor.
+2. Test locally: run `python3 -m http.server` in the folder and open http://localhost:8000/.
+3. Open a pull request into `main`, review it, then merge it. The site updates in 1-3 minutes (browsers may cache pages for about 10 minutes, so hard-refresh).
+Only public files belong in this repository. Keep print-bleed files, editable sources and internal reports elsewhere.
 
 ## Files
 | File | Purpose |
