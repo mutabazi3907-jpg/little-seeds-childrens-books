@@ -1,270 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Little Seeds Children’s Books: Christian and general educational children’s books by Joseph Mutabazi. Planting Seeds. Growing Minds. Shaping Generations.">
-<title>Little Seeds Children’s Books</title>
-<meta property="og:type" content="website"><meta property="og:site_name" content="Little Seeds Children’s Books"><meta property="og:title" content="Little Seeds Children’s Books"><meta property="og:description" content="Planting Seeds. Growing Minds. Shaping Generations."><meta name="twitter:card" content="summary">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Little Seeds Children’s Books","slogan":"Planting Seeds. Growing Minds. Shaping Generations.","founder":{"@type":"Person","name":"Joseph Mutabazi"},"email":"mutabazi3907@gmail.com","telephone":"+1-832-815-3907"},{"@type":"Person","name":"Joseph Mutabazi","jobTitle":"Founder, Little Seeds Children’s Books"},{"@type":"Book","name":"The Little Boy Who Learned to Share","author":{"@type":"Person","name":"Joseph Mutabazi"},"url":"https://www.amazon.com/dp/B0HQZKYJDV"}]}</script>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#FBF6E6;--surf:#FFFDF6;--ink:#233020;--mut:#5A6652;--leaf:#2E7D4F;--leafd:#1F5A38;--gold:#E3A920;--line:#E6DDBE;--onleaf:#fff;--hd:"Fredoka","Trebuchet MS",sans-serif;--bd:"Literata",Georgia,serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131A14;--surf:#1B251D;--ink:#EAF2E6;--mut:#A9BAA8;--leaf:#5CC283;--leafd:#8FDCAA;--gold:#F0C04A;--line:#2E3D31;--onleaf:#10200F;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#131A14;--surf:#1B251D;--ink:#EAF2E6;--mut:#A9BAA8;--leaf:#5CC283;--leafd:#8FDCAA;--gold:#F0C04A;--line:#2E3D31;--onleaf:#10200F;color-scheme:dark}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:1.05rem/1.7 var(--bd)}
-a{color:var(--leafd)}:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.w{max-width:1040px;margin:0 auto;padding:0 1.25rem}
-h1,h2,h3{font-family:var(--hd);font-weight:600;line-height:1.15;margin:0 0 .6em}
-h1{font-size:clamp(2.3rem,6.5vw,4rem)}h2{font-size:clamp(1.6rem,4vw,2.3rem)}h3{font-size:1.2rem}
-p{margin:0 0 1em;max-width:64ch}
-header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-header .w{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding-top:.6rem;padding-bottom:.6rem}
-.brand{font:600 1.2rem var(--hd);text-decoration:none;color:var(--ink)}
-nav{display:flex;gap:.3rem 1rem;flex-wrap:wrap}nav a{font:500 1rem var(--hd);text-decoration:none;color:var(--mut)}nav a[aria-current]{color:var(--leafd);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:5px}
-.view{display:none}.view.on{display:block}
-.band{padding:3rem 0;border-top:1px solid var(--line)}.band:first-child{border-top:0}
-.hero .w{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
-.lede{font-size:1.2rem;color:var(--mut)}.motto{font:500 1.15rem var(--hd);color:var(--leafd)}
-.btn{display:inline-block;font:600 1rem var(--hd);background:var(--leaf);color:var(--onleaf);border:0;padding:.7rem 1.3rem;border-radius:999px;text-decoration:none;margin:0 .5rem .5rem 0;cursor:pointer}
-.btn.alt{background:none;color:var(--leafd);box-shadow:inset 0 0 0 2px var(--leaf)}
-.btn[aria-disabled]{opacity:.55;cursor:default}
-.sprout{width:100%;max-width:300px;justify-self:center}
-.sprout .st{stroke-dasharray:140;stroke-dashoffset:140;animation:g 1.6s ease-out .2s forwards}
-@keyframes g{to{stroke-dashoffset:0}}@media (prefers-reduced-motion:reduce){.sprout .st{animation:none;stroke-dashoffset:0}}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:1.2rem 1.3rem}.card p{margin:0;color:var(--mut)}
-.cat{border-left:6px solid var(--gold)}
-.tools{display:flex;gap:.8rem;flex-wrap:wrap;margin:1rem 0 1.5rem}
-input,select,textarea{font:1rem var(--bd);color:var(--ink);background:var(--surf);border:2px solid var(--line);border-radius:10px;padding:.6rem .8rem;width:100%}
-.tools input{flex:2 1 220px;width:auto}.tools select{flex:1 1 160px;width:auto}
-.books{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.2rem}
-.book{background:var(--surf);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
-.cover{aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:1.2rem;font:600 1.3rem/1.2 var(--hd);color:#fff;background:linear-gradient(160deg,#2E7D4F,#1F5A38);position:relative}
-.cover.c2{background:linear-gradient(160deg,#E3A920,#B97F0B);color:#2B2208}
-.cover small{font:500 .8rem var(--hd);margin-top:.8rem;opacity:.9}
-.bi{padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.4rem;flex:1}.bi p{font-size:.95rem;color:var(--mut);margin:0}
-.meta{font-size:.85rem;color:var(--mut)}
-.tag{display:inline-block;font:500 .8rem var(--hd);border-radius:999px;padding:.05rem .65rem;background:var(--gold);color:#2B2208;width:max-content}.tag.pub{background:var(--leaf);color:var(--onleaf)}
-.detail{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:2rem;align-items:start}
-.empty{color:var(--mut)}
-.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#EFE9D2;display:block}
-.cover>span{position:relative;z-index:0}
-mark.todo{background:#FFF1B8;color:#2B2208;border-radius:4px;padding:0 .25rem}
-details.att{background:var(--surf);border:1px dashed var(--gold);border-radius:10px;padding:.4rem .8rem;margin:.6rem 0;font-size:.95rem;color:var(--mut);max-width:64ch}details.att summary{cursor:pointer;font:500 .95rem var(--hd);color:var(--leafd)}
-.legal h2{font-size:1.4rem;margin-top:2rem}.legal table{border-collapse:collapse;width:100%;max-width:820px;margin:0 0 1.2rem;font-size:.95rem}.legal th,.legal td{border:1px solid var(--line);padding:.5rem .7rem;text-align:left;vertical-align:top}.legal th{font-family:var(--hd);background:var(--surf)}.legal .tw{overflow-x:auto}
-.philosophy{margin:0;padding:.4rem 0 .4rem 1.1rem;border-left:5px solid var(--gold);font:italic 500 1.2rem/1.5 var(--bd);color:var(--leafd);max-width:52ch}.portrait{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:18px;border:1px solid var(--line)}
-.books.feat{grid-template-columns:repeat(3,1fr)}.bi p{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}.detail .bi p{display:block}
-.menu{display:none;font:600 1rem var(--hd);background:none;color:var(--leafd);border:2px solid var(--leaf);border-radius:999px;padding:.35rem 1rem;cursor:pointer}
-.skip{position:absolute;left:-9999px;top:0;background:var(--leafd);color:#fff;padding:.6rem 1rem;z-index:20}.skip:focus{left:.5rem;top:.5rem}
-main:focus{outline:none}
-.rel{margin-top:2.5rem}.mini{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.8rem}
-.mini a{display:block;padding:.8rem 1rem;border:1px solid var(--line);border-radius:14px;background:var(--surf);text-decoration:none;font:500 1rem var(--hd)}
-.photo{aspect-ratio:4/5;border:2px dashed var(--leaf);border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;padding:1rem;color:var(--mut)}
-form{display:grid;gap:1rem;max-width:560px}label{font:500 1rem var(--hd);display:block;margin-bottom:.25rem}
-.err{color:#B3261E;font-size:.9rem;min-height:1.1em}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#FF9C94}}
-.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
-.note{background:var(--surf);border:1px dashed var(--gold);border-radius:12px;padding:.8rem 1rem;font-size:.95rem;color:var(--mut)}
-.news{background:var(--leafd);color:#F4F9F3;border-radius:22px;padding:2rem}.news p{color:inherit}.news input{max-width:340px}
-footer{background:#1F5A38;color:#F4F9F3;padding:2rem 0;margin-top:2rem}footer a{color:#FFE9A8}footer p{margin:.2rem 0;max-width:none}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:#0C130E}}
-@media (max-width:900px){.books.feat{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:760px){.hero .w,.grid2,.grid3,.detail{grid-template-columns:1fr}.sprout{max-width:180px;order:-1}.menu{display:inline-block}header .w{flex-wrap:wrap}nav{display:none;width:100%;flex-direction:column;gap:0;padding:.4rem 0 .6rem}nav.open{display:flex}nav a{padding:.65rem 0;border-top:1px solid var(--line)}.books,.books.feat{grid-template-columns:1fr}.cover{max-width:420px;width:100%;margin:0 auto}.detail .book{max-width:420px}}
-</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2775.2">
+  <style type="text/css">
+    body {background-color: #faf4e0}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Georgia; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #1a492a}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px 'Trebuchet MS'; color: #1b2518; -webkit-text-stroke: #1b2518}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Trebuchet MS'; color: #485441; -webkit-text-stroke: #485441}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px Georgia; color: #1b2518; -webkit-text-stroke: #1b2518; min-height: 15.0px}
+    p.p5 {margin: 0.0px 0.0px 2.4px 0.0px; font: 12.6px Georgia; color: #f1f8f0; -webkit-text-stroke: #f1f8f0}
+    p.p6 {margin: 0.0px 0.0px 2.4px 0.0px; font: 12.6px Georgia; color: #fee598; -webkit-text-stroke: #fee598}
+    span.s1 {text-decoration: underline ; font-kerning: none}
+    span.s2 {font-kerning: none; background-color: #faf4e0}
+    span.s3 {font-kerning: none}
+    span.s4 {font-kerning: none; background-color: #1a492a}
+    span.s5 {text-decoration: underline ; font-kerning: none; background-color: #1a492a}
+    span.s6 {font-kerning: none; color: #f1f8f0; background-color: #1a492a; -webkit-text-stroke: 0px #f1f8f0}
+    span.s7 {text-decoration: underline ; font-kerning: none; color: #fee598; -webkit-text-stroke: 0px #fee598}
+    span.s8 {text-decoration: underline ; font-kerning: none; color: #fee598; background-color: #1a492a; -webkit-text-stroke: 0px #fee598}
+  </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header><div class="w"><a class="brand" href="#home">Little Seeds</a>
-<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
-<nav id="nav" aria-label="Main"><a href="#home">Home</a><a href="#books">Our Books</a><a href="#about">About</a><a href="#founder">Founder</a><a href="#mission">Community</a><a href="#resources">Resources</a><a href="#contact">Contact</a></nav></div></header>
-<main id="main" tabindex="-1">
-
-<div class="view" id="v-home" data-title="Little Seeds Children’s Books">
-<div class="band hero"><div class="w"><div>
-<h1>Planting Seeds. Growing Minds. Shaping Generations.</h1>
-<p class="lede">Little Seeds Children’s Books is an independent publisher of Christian and general educational books that help children discover truth, build character, and love to read.</p>
-<a class="btn" href="#books">Explore Our Books</a><a class="btn alt" href="#about">Discover Our Mission</a>
-<p class="motto">One book. One little heart. One meaningful seed at a time.</p></div>
-<svg class="sprout" viewBox="0 0 200 240" role="img" aria-label="A green sprout with a gold leaf growing from soil"><ellipse cx="100" cy="215" rx="80" ry="16" fill="#6B4A33"/><path class="st" d="M100 212C100 170 98 140 100 100" fill="none" stroke="var(--leaf)" stroke-width="7" stroke-linecap="round"/><path d="M100 130C60 130 38 105 36 72 72 70 98 92 100 130Z" fill="var(--leaf)"/><path d="M100 104C136 104 160 80 164 48 128 46 102 70 100 104Z" fill="var(--gold)"/></svg></div></div>
-<div class="band"><div class="w"><h2>Featured books</h2><div id="featured"></div></div></div>
-<div class="band"><div class="w"><h2>Two ways we help children grow</h2><div class="grid2">
-<div class="card cat"><h3>Christian and Biblical Education</h3><p>Bible stories, biblical education, Christian character, and faith-based learning for children and the families, churches, and Sunday schools who guide them.</p></div>
-<div class="card cat"><h3>General Education and Children’s Literature</h3><p>Educational picture books, stories that teach positive values, early learning, creativity, curiosity, and literacy for every child.</p></div></div></div></div>
-<div class="band"><div class="w"><h2>Why Little Seeds</h2><div class="grid3">
-<div class="card"><h3>Faithful and clear</h3><p>Christian books are rooted in Scripture and say so plainly.</p></div>
-<div class="card"><h3>Made to teach</h3><p>Every book has a clear learning goal and age-appropriate language.</p></div>
-<div class="card"><h3>Made to share</h3><p>We want quality books to reach children with limited access to them.</p></div></div>
-<p style="margin-top:1.2rem">Our reading and literacy mission goes beyond the page. <a href="#mission">See our community work</a>.</p></div></div>
-<div class="band"><div class="w"><h2>Our mission and vision</h2><div class="grid2"><div class="card"><h3>Mission</h3><p>To create engaging, educational children’s books that help young readers discover biblical truths, develop good character, and build a lifelong love of reading.</p></div><div class="card"><h3>Vision</h3><p>A trusted children’s publishing brand serving families, churches, schools, and communities around the world.</p></div></div>
-<div class="grid2" style="margin-top:1.5rem"><div class="card"><h3>About the founder</h3><p>Joseph Mutabazi is a Christian author, educator, and the founder of Little Seeds Children’s Books, passionate about planting seeds of faith, knowledge, kindness, and curiosity in little hearts.</p><p style="margin-top:.6rem"><a href="#founder">Meet Joseph</a></p></div><div class="card"><h3>For parents and educators</h3><p>Guides, discussion questions, and activities will be added as they are published.</p><p style="margin-top:.6rem"><a href="#resources">See resources</a></p></div></div></div></div>
-<div class="band"><div class="w"><div class="news"><h2>Join the Little Seeds list</h2><p>Hear about new books and resources as they are released.</p>
-<form data-kind="newsletter" novalidate style="max-width:420px"><div class="hp" aria-hidden="true"><label>Leave blank<input tabindex="-1" autocomplete="off" name="website"></label></div>
-<div><label for="nl">Email address</label><input id="nl" name="email" type="email" autocomplete="email"><div class="err" role="alert"></div></div><button class="btn" style="background:var(--gold);color:#2B2208" type="submit">Subscribe</button><p style="font-size:.9rem;margin:.6rem 0 0">Signups are not being delivered yet. This form will be connected soon.</p><div class="out" role="status"></div></form></div></div></div>
-</div>
-
-<div class="view" id="v-books" data-title="Our Books | Little Seeds Children’s Books"><div class="band"><div class="w">
-<h1>Our Books</h1><p class="lede">Search and browse the Little Seeds catalogue.</p>
-<div class="tools"><input id="q" type="search" placeholder="Search by title or topic" aria-label="Search books">
-<select id="fc" aria-label="Category"><option value="">All categories</option><option>Christian and Biblical Education</option><option>General Education</option><option>Children’s Stories</option></select>
-<select id="fk" aria-label="Collection"><option value="">All collections</option><option>Growing in God’s Word</option></select>
-<select id="fa" aria-label="Age group"><option value="">All ages</option><option>3–8</option><option>4–8</option></select></div>
-<div class="books" id="grid" aria-live="polite"></div></div></div></div>
-
-<div class="view" id="v-book" data-title="Book | Little Seeds Children’s Books"><div class="band"><div class="w" id="bd"></div></div></div>
-
-<div class="view" id="v-about" data-title="About Us | Little Seeds Children’s Books"><div class="band"><div class="w">
-<h1>About Little Seeds</h1>
-<p>Little Seeds began at home. Joseph Mutabazi noticed that his daughter reached for a book whenever she saw him reading, and he decided to become his children’s first inspiration in writing books. He also saw that many families in his community had few children’s books to share. Little Seeds is his answer to both.</p>
-<h2>The name</h2><p>Every book can plant a meaningful seed in a child’s heart and mind. Seeds grow slowly, quietly, and for years.</p>
-<div class="grid2"><div class="card"><h3>Our mission</h3><p>To create engaging, educational children’s books that help young readers discover biblical truths, develop good character, cultivate curiosity, and build a lifelong love of reading.</p></div>
-<div class="card"><h3>Our vision</h3><p>A trusted children’s publishing brand serving families, churches, schools, and communities around the world, so that every child can learn and read.</p></div></div>
-<h2 style="margin-top:2rem">Our publishing philosophy</h2><p>Children deserve meaningful ideas, shared in clear language with engaging illustrations. Stories should teach without losing the joy of reading. Parents, teachers, and churches are partners.</p>
-<h2>Our two categories</h2><div class="grid2"><div class="card cat"><h3>Christian and Biblical Education</h3><p>Books that teach biblical truth faithfully and simply.</p></div><div class="card cat"><h3>General Education and Children’s Literature</h3><p>Books that help every child learn, explore, and enjoy reading.</p></div></div>
-<h2 style="margin-top:2rem">Quality and accuracy</h2><p>Christian teaching must be consistent with Scripture. Every book has a clear learning objective, and we carefully review manuscripts, illustrations, and print production. We do not copy other authors’ content or illustrations.</p>
-</div></div></div>
-
-<div class="view" id="v-founder" data-title="About the Founder | Little Seeds Children’s Books"><div class="band"><div class="w"><div class="detail">
-<img class="portrait" src="images/joseph-mutabazi.webp" width="800" height="800" alt="Joseph Mutabazi, founder of Little Seeds Children’s Books, smiling in a light blue suit and glasses" decoding="async">
-<div><h1>Joseph Mutabazi</h1><p class="lede">Christian Author &amp; Educator | Founder, Little Seeds Children’s Books</p>
-<p>Joseph Mutabazi is a Christian author, educator, and the founder of Little Seeds Children’s Books. He is passionate about helping children discover biblical truths, develop a love of reading, and grow in wisdom, faith, and character.</p>
-<p>His passion for writing is rooted in the belief that childhood is an important season for planting seeds of faith, knowledge, kindness, and curiosity. Through engaging children’s stories and meaningful educational experiences, he seeks to encourage young readers to explore God’s Word, appreciate the world around them, and develop hearts filled with compassion and understanding.</p>
-<p>Through Little Seeds Children’s Books, Joseph is building a publishing platform dedicated to Christian and biblical education, as well as general children’s literature. His vision is to create meaningful books that inspire children, support parents and educators, and positively influence future generations.</p>
-<h2 style="font-size:1.3rem;margin-top:1.5rem">His guiding philosophy</h2>
-<blockquote class="philosophy">“Every book is an opportunity to plant a meaningful seed in a child’s heart and mind.”</blockquote></div></div></div></div></div>
-
-<div class="view" id="v-mission" data-title="Mission and Community Impact | Little Seeds Children’s Books"><div class="band"><div class="w">
-<h1>Planting Seeds Beyond the Pages</h1>
-<p class="lede">A book is only a seed if a child can reach it. We want quality reading to be accessible to every child.</p>
-<div class="grid3"><div class="card"><h3>Literacy and access</h3><p>Making quality reading resources available, especially to underserved children.</p></div>
-<div class="card"><h3>Book donations</h3><p>Building a sustainable initiative to donate children’s books to communities in need.</p></div>
-<div class="card"><h3>Partnerships</h3><p>Working with churches, schools, libraries, and community organizations.</p></div>
-<div class="card"><h3>Educational outreach</h3><p>Reading initiatives and book-sharing activities that encourage children to read.</p></div></div>
-<p class="note" style="margin-top:1.5rem">These are our goals as Little Seeds grows. A future community program, the Little Seeds Reading Initiative, would bring them together. Partner details will be added here when programs begin.</p>
-</div></div></div>
-
-<div class="view" id="v-resources" data-title="Resources | Little Seeds Children’s Books"><div class="band"><div class="w">
-<h1>For Parents and Educators</h1><p class="lede">Tools to help you read, talk, and learn with children. Resources will appear here as they are published.</p>
-<div class="grid3" id="res"></div></div></div></div>
-
-<div class="view" id="v-contact" data-title="Contact | Little Seeds Children’s Books"><div class="band"><div class="w">
-<h1>Contact Us</h1><p>Questions, partnerships, or school and church requests? We’d love to hear from you.</p>
-<form data-kind="contact" novalidate><div class="hp" aria-hidden="true"><label>Leave blank<input tabindex="-1" autocomplete="off" name="website"></label></div>
-<div><label for="cn">Name</label><input id="cn" name="name" autocomplete="name"><div class="err" role="alert"></div></div>
-<div><label for="ce">Email</label><input id="ce" name="email" type="email" autocomplete="email"><div class="err" role="alert"></div></div>
-<div><label for="co">Organization (optional)</label><input id="co" name="org"></div>
-<div><label for="cs">Subject</label><input id="cs" name="subject"><div class="err" role="alert"></div></div>
-<div><label for="cm">Message</label><textarea id="cm" name="message" rows="5"></textarea><div class="err" role="alert"></div></div>
-<p class="note">This form is not connected to email yet, so messages are not being delivered. Please email <a href="mailto:mutabazi3907@gmail.com">mutabazi3907@gmail.com</a> instead.</p><div><button class="btn" type="submit">Send message</button></div><div class="out" role="status"></div></form>
-<p class="note" style="margin-top:1.5rem">Email: <a href="mailto:mutabazi3907@gmail.com">mutabazi3907@gmail.com</a> · Phone: <a href="tel:+18328153907">832-815-3907</a> · Social media: [links to be added]</p>
-</div></div></div>
-
-<div class="view" id="v-privacy" data-title="Privacy Policy | Little Seeds Children’s Books"><div class="band"><div class="w legal" id="legal-privacy"></div></div></div>
-<div class="view" id="v-terms" data-title="Terms of Use | Little Seeds Children’s Books"><div class="band"><div class="w legal" id="legal-terms"></div></div></div>
-</main>
-<footer><div class="w"><p><b>Planting Seeds. Growing Minds. Shaping Generations.</b></p><p>One book. One little heart. One meaningful seed at a time.</p><p><a href="mailto:mutabazi3907@gmail.com">mutabazi3907@gmail.com</a> · <a href="tel:+18328153907">832-815-3907</a></p><p><a href="#privacy">Privacy Policy</a> · <a href="#terms">Terms of Use</a> · © Little Seeds Children’s Books</p></div></footer>
-
-<script>
-var CONFIG={formEndpoint:"",newsletterEndpoint:""};
-/* TO ADD A BOOK: copy one record below, give it a new unique id, and fill in the fields.
-   Leave amazon:"" until the book is live (no Buy button shows). Set cover:"" to keep the placeholder,
-   or paste an image URL/data URI. status is "Published" or "Coming Soon". */
-var BOOKS=[
-{id:"little-boy-share",title:"The Little Boy Who Learned to Share",author:"Joseph Mutabazi",collection:"",isbn:"",asin:"B0HQZKYJDV",featured:true,cover:"images/little-boy.webp",coverSm:"images/little-boy-sm.webp",cw:900,ch:900,csw:480,csh:480,cat:"Children’s Stories",age:"3–8",status:"Published",sub:"A Story About Generosity, Kindness, and God’s Love",desc:"Kito loves mangoes. When his friend Amara asks for one, he decides to keep every mango for himself. But soon, Kito discovers that having something all to yourself does not always bring happiness. With gentle wisdom from his mother and a lesson from the Bible, Kito learns that sharing can turn an ordinary day into something wonderful.",amazon:"https://www.amazon.com/dp/B0HQZKYJDV",c:"c1"},
-{id:"who-made-everything",title:"Who Made Everything?",sub:"A Little Book About God the Creator",author:"Joseph Mutabazi",collection:"Growing in God’s Word",stage:"Cover design approved",isbn:"",coverNote:"Cover shown is a draft preview and may change before publication.",featured:true,cover:"images/who-made-everything.webp",coverSm:"images/who-made-everything-sm.webp",cw:719,ch:1086,csw:480,csh:724,cat:"Christian and Biblical Education",age:"4–8",status:"Coming Soon",desc:"A picture book that helps children see that God is the Creator of all things, drawn from Genesis 1 and 2.",amazon:"",c:"c2"},
-{id:"little-bird-home",title:"The Little Bird Who Lost Her Way Home",author:"Joseph Mutabazi",collection:"",isbn:"",character:"Tuli",coverNote:"Cover shown is a draft and may change before publication.",featured:true,cover:"images/little-bird.webp",coverSm:"images/little-bird-sm.webp",cw:900,ch:900,csw:480,csh:480,sub:"A Story About Courage, Friendship, and God’s Care",verse:"Psalm 56:3 (KJV)",pages:"24-page picture book",cat:"Christian and Biblical Education",age:"4–8",status:"In Development",desc:"Tuli, a little bird, loses her way home. When Mama hears her call, she searches for Tuli, finds her, and helps her return home. A story about God’s care, protection, comfort, and help through others.",amazon:"",c:"c1"}];
-var RES=["Reading recommendations","Discussion questions","Learning activities","Bible-based learning resources","Parent and teacher guides","Downloadable materials"];
-function $(s,r){return (r||document).querySelector(s)}
-function esc(t){var d=document.createElement("div");d.textContent=t;return d.innerHTML}
-function cover(b,big){var t=esc(b.title);if(!b.cover)return '<div class="cover '+b.c+'" role="img" aria-label="Placeholder cover for '+t+'"><span>'+t+'</span><small>Cover image coming soon</small></div>';
-var src=big?b.cover:(b.coverSm||b.cover),w=big?b.cw:b.csw,h=big?b.ch:b.csh;
-return '<div class="cover '+b.c+'"><span aria-hidden="true">'+t+'</span><img src="'+esc(src)+'" width="'+(w||900)+'" height="'+(h||900)+'" alt="Front cover of '+t+' by '+esc(b.author)+'" decoding="async"'+(big?'':' loading="lazy"')+' onerror="var p=this.parentNode;p.setAttribute(\'role\',\'img\');p.setAttribute(\'aria-label\',\'Cover image not available for '+t.replace(/'/g,"")+'\');this.remove()"></div>'}
-function card(b){return '<article class="book">'+cover(b)+'<div class="bi"><span class="tag '+(b.status==="Published"?"pub":"")+'">'+b.status+'</span><h3>'+esc(b.title)+'</h3><span class="meta">'+esc(b.author)+' · Ages '+b.age+' · '+esc(b.cat)+(b.collection?' · '+esc(b.collection):'')+'</span><p>'+esc(b.desc)+'</p><div><a class="btn alt" href="#book-'+b.id+'">View Book</a>'+(b.amazon?'<a class="btn" href="'+b.amazon+'" target="_blank" rel="noopener">Buy on Amazon</a>':'')+'</div></div></article>'}
-function grid(){var q=$("#q").value.toLowerCase(),c=$("#fc").value,a=$("#fa").value,k=$("#fk").value;
-var r=BOOKS.filter(function(b){return(!c||b.cat===c)&&(!a||b.age===a)&&(!k||b.collection===k)&&(!q||(b.title+" "+(b.sub||"")+" "+b.desc+" "+b.cat).toLowerCase().indexOf(q)>-1)});
-$("#grid").innerHTML=r.length?r.map(card).join(""):'<p class="empty">No books match yet. Try clearing a filter.</p>'}
-function related(b){var r=BOOKS.filter(function(x){return x.id!==b.id&&(x.cat===b.cat||(b.collection&&x.collection===b.collection))});if(!r.length)r=BOOKS.filter(function(x){return x.id!==b.id});return r.length?'<div class="rel"><h2>More from Little Seeds</h2><div class="mini">'+r.map(function(x){return '<a href="#book-'+x.id+'">'+esc(x.title)+'</a>'}).join('')+'</div></div>':''}
-function detail(id){var b=BOOKS.filter(function(x){return x.id===id})[0];if(!b){document.title="Book not found | Little Seeds Children’s Books";$("#bd").innerHTML='<h1>Book not found</h1><a class="btn" href="#books">Back to books</a>';return}
-$("#bd").innerHTML='<div class="detail"><div class="book">'+cover(b,true)+(b.coverNote?'<p class="meta" style="padding:.6rem .9rem .8rem;margin:0">'+esc(b.coverNote)+'</p>':'')+'</div><div><span class="tag '+(b.status==="Published"?"pub":"")+'">'+b.status+'</span><h1>'+esc(b.title)+'</h1>'+(b.sub?'<p class="lede">'+esc(b.sub)+'</p>':'')+'<p class="meta">By '+esc(b.author)+' · Ages '+b.age+' · '+esc(b.cat)+(b.collection?' · Collection: '+esc(b.collection):'')+(b.isbn?' · ISBN '+esc(b.isbn):'')+(b.asin?' · ASIN '+esc(b.asin):'')+(b.character?' · Main character: '+esc(b.character):'')+(b.pages?' · '+esc(b.pages):'')+'</p>'+(b.stage?'<p class="meta">Stage: '+esc(b.stage)+'</p>':'')+(b.verse?'<p class="meta">Key Bible verse: '+esc(b.verse)+'</p>':'')+'<p>'+esc(b.desc)+'</p>'+(b.amazon?'<a class="btn" href="'+b.amazon+'" target="_blank" rel="noopener">Buy on Amazon</a>':'<p class="note">'+(b.status==="In Development"?'This book is in development.':'Coming soon.')+' A purchase link will appear here once the Amazon publication is confirmed.</p>')+'<a class="btn alt" href="#books">All books</a></div></div>'+related(b);
-document.title=b.title+" | Little Seeds Children’s Books"}
-$("#featured").innerHTML='<div class="books feat">'+BOOKS.filter(function(b){return b.featured}).map(card).join("")+'</div>';
-$("#res").innerHTML=RES.map(function(r){return '<div class="card"><h3>'+r+'</h3><p>Coming soon.</p></div>'}).join("");
-["#q","#fc","#fa","#fk"].forEach(function(s){$(s).addEventListener("input",grid)});grid();
-
-var PRIV={h:"Privacy Policy",sections:[
-["How to read this draft",["This policy is a draft pending legal review. Highlighted items marked [CONFIRM] are facts the company still has to confirm, and boxes marked Attorney review are legal questions for a qualified attorney. **Current** means a practice exists on the website today. **Planned** means it is intended but not live yet."]],
-["Who we are",["Little Seeds Children’s Books (“Little Seeds,” “we,” “us”) is an independent children’s publishing company founded by Joseph Mutabazi. We publish Christian and biblical education books and general children’s literature. This policy explains what our website collects, how we use it, and the choices families have. It applies to our official website at [CONFIRM: final public website address].","[CONFIRM: legal business name, type of entity (for example LLC or sole proprietorship), and state of formation.]","Our books are sold by third parties such as Amazon. This policy does not cover purchases made on their sites."]],
-["What this policy assumes today",["Each row shows a practice and where it stands. Anything marked Planned is not live.",{table:[["Practice","Status today"],["Contact form (name, email, optional organization, subject, message)","Built. Not connected, so messages are not delivered. Please email us instead."],["Newsletter sign-up (email address)","Built. Not connected, so sign-ups are not delivered."],["Cookies and tracking","None on the site today."],["Google Fonts","Current. Pages request fonts from Google’s servers."],["Amazon links","Current. Link to the Amazon page for The Little Boy Who Learned to Share."],["Accounts, payments, comments","None on the site."],["Sale or sharing of personal information","[CONFIRM: that there is none]"]]}]],
-["Information you give us",["**Contact form (Planned: not connected yet).** If you write to us through the contact form, we ask for your name, email address, a subject and a message. You may also give your organization’s name. Please do not put information about your children, or other sensitive information, in your message.","**Newsletter (Planned: not connected yet).** If you subscribe, we ask for your email address.","Until these forms are connected, nothing typed into them is sent to or stored by us. You can email us directly at mutabazi3907@gmail.com.","[CONFIRM: the service that will receive form messages and manage the newsletter list, whether subscribers confirm by email, and whether any other information will be collected.]"]],
-["How we use information",["We may use the information you give us to:",{ul:["answer your questions and requests","send the newsletter you signed up for, such as announcements of new books and resources [CONFIRM: types of messages]","keep a record of our correspondence","protect the site and meet legal obligations"]},"We will not use your email address for something unrelated to what you signed up for without asking you first. [CONFIRM]","[CONFIRM: whether Little Seeds sells, rents or shares personal information with anyone for their own marketing. If it does not, add “We do not sell your personal information.” ATTORNEY: confirm before including it.]"]],
-["Cookies, analytics and automatic data",["**Current.** Our website does not use cookies, advertising trackers or analytics tools. [CONFIRM again at launch.]","Like most websites, our host’s servers may automatically receive basic technical information when you visit, such as your IP address, browser type and the pages you request. [CONFIRM: what the hosting provider records and for how long.]","Our pages currently load fonts from Google Fonts, so your browser contacts Google’s servers when a page opens. [CONFIRM: keep this, or host the fonts ourselves. ATTORNEY: whether this needs a disclosure or consent.]","**Planned.** If we add analytics, a cookie banner or advertising tools, we will list them here, say what they collect, and update this policy before they go live."]],
-["Third-party services",["We do not control the practices of other companies. We will update this list when services are added.",{table:[["Service","What it does","Status"],["Amazon","Sells our books. Clicking Buy on Amazon takes you to its site, where Amazon’s own privacy notice applies","Current"],["Google Fonts","Delivers the fonts used on our pages","Current"],["Website hosting provider","Serves the website","[CONFIRM: provider]"],["Form service","Would receive contact form messages","Planned: not selected"],["Email service provider","Would manage the newsletter list and send emails","Planned: not selected"],["Social media","Links to our profiles","Planned: [CONFIRM: platforms]"]]},"[ATTORNEY: whether written terms or data processing terms are needed with the hosting, form and email providers once chosen.]"]],
-["Data storage and security",["[CONFIRM: where form messages and newsletter addresses will be stored (a service provider’s system, an email inbox, or both) and in which country.]","We intend to take reasonable steps to protect personal information, such as limiting who can see it and choosing services that encrypt data in transit. [CONFIRM: each step must be true before it is published.] No website or email system is completely secure, so we cannot guarantee absolute security.","[ATTORNEY: security wording, and breach notification duties in the states where visitors live.]"]],
-["Children’s privacy and COPPA",["**Who our website is for.** Our website is written for parents, educators, churches, schools and libraries. It is not meant for children under 13 to use on their own. The contact form and newsletter are for adults.","**What we do not do.** We do not knowingly collect personal information from children under 13. We do not ask children for names, photos, addresses or other details. [CONFIRM: this is true for every feature, now and as planned.]","**If a child’s information reaches us.** If we learn that a child under 13 sent us personal information through the site, we will delete it [CONFIRM: process and who is responsible]. A parent or guardian can also contact us (see the next section).","[ATTORNEY: Little Seeds publishes books for children, and some site content, such as book covers and child characters, may appeal to children. Regulators weigh several factors when deciding whether a site is “directed to children” under COPPA, so a statement that the site is for adults may not be enough. The COPPA rule has also been amended in recent years, so confirm current requirements and any state children’s privacy laws before this section is final. Do not describe the site as “COPPA compliant” without that review.]"]],
-["Parents: your rights and how to reach us",["A parent or guardian can contact us at any time to:",{ul:["ask whether we hold information from your child","ask us to delete your child’s information","ask us to stop collecting or using it"]},"To make a request, email mutabazi3907@gmail.com or write to [CONFIRM: business mailing address]. Tell us what information you believe we have and the email address it was sent from. We may ask for details to confirm you are the child’s parent or guardian before we act. [CONFIRM] We will reply within [CONFIRM: number of days].","[ATTORNEY: what COPPA requires if the company ever knowingly collects information from a child, including verifiable parental consent.]"]],
-["Data retention and deletion requests",["This is proposed practice. The company must confirm each row.",{table:[["Information","Proposed retention"],["Contact form messages","Kept only as long as needed to answer you and keep a record of the conversation [CONFIRM: period]"],["Newsletter email addresses","Kept until you unsubscribe [CONFIRM]"],["Hosting or server logs","As set by the hosting provider [CONFIRM]"]]},"**Deletion requests.** To ask us to delete information we hold about you, email mutabazi3907@gmail.com. We will delete it, or tell you why we cannot, within [CONFIRM: number of days]. We may need to keep some information if the law requires. [ATTORNEY]","**Unsubscribing.** Every newsletter will include a way to unsubscribe. [CONFIRM]"]],
-["Other choices, rights and international visitors",["You can unsubscribe from the newsletter at any time, and you can ask us to show, correct or delete information we hold about you. Depending on where you live, state law may give you additional rights. [ATTORNEY: whether any state privacy law applies to Little Seeds, since many have size and volume thresholds, and what rights wording is required.]","Little Seeds is based in [CONFIRM: state and country]. If the company serves visitors in other countries, extra privacy rules may apply. [ATTORNEY: whether EU, UK or other rules apply to expected visitors.]"]],
-["Changes to this policy",["We may update this policy as the website changes, for example when the contact form and newsletter go live or if analytics are added. We will post the new version on this page and change the date below. For significant changes, we will also [CONFIRM: notify subscribers by email and show a notice on the website].",{ul:["Effective date: [CONFIRM: date of publication]","Last updated: draft of November 9, 2026"]}]],
-["Contact us",["Send general questions, questions about this policy, and requests to access, correct or delete personal information (yours or your child’s) to the email below. We do not publish a residential address.",{table:[["Item","Detail"],["Company","Little Seeds Children’s Books [CONFIRM: full legal name]"],["Founder","Joseph Mutabazi"],["Email","mutabazi3907@gmail.com"],["Phone","832-815-3907"],["Mailing address","[CONFIRM: business mailing address]"],["Website","[CONFIRM: final public address]"]]}]]
-]};
-var TERMS={h:"Terms of Use",sections:[
-["How to read this draft",["These terms are a draft pending legal review. Highlighted items marked [CONFIRM] are facts the company still has to supply, and boxes marked Attorney review are legal questions for a qualified attorney. They are written to match the Privacy Policy."]],
-["1. Acceptance of terms",["By using this website, you agree to these Terms of Use and to our Privacy Policy. If you do not agree, please do not use the site. Effective date: [CONFIRM: date of publication].","[ATTORNEY: whether use of a browse-only site is enough to bind visitors, or whether a click-to-accept step is advisable.]"]],
-["2. Website purpose",["This website is run by Little Seeds Children’s Books, an independent children’s publishing company founded by Joseph Mutabazi. It shares information about our books, our mission and our founder, helps parents, educators and churches find our titles, and will offer learning resources as they are published.","We do not sell books or take payments on this site. Books are sold by third-party retailers such as Amazon. [CONFIRM: update these terms before any direct sales begin.]"]],
-["3. Intellectual property and copyright",["The text, book descriptions, cover art, illustrations, logos and the name “Little Seeds Children’s Books” belong to Little Seeds or to the authors, illustrators or others who license them to us. [CONFIRM: who owns or licenses each cover and illustration, including any tools or illustrators used.]","You may view the site and share links to it. Please do not copy, reproduce, post, sell or adapt our content without our written permission. Short quotations with credit to Little Seeds are fine. To ask for permission, email mutabazi3907@gmail.com.","[ATTORNEY: copyright notice wording and trademark status. Do not use the ® symbol unless a mark is registered.]"]],
-["4. Book descriptions and purchasing links",["Book descriptions are short summaries and may change. Each book shows a status:",{ul:["**Published:** available from the retailer link shown on the book’s page.","**Coming Soon** or **In Development:** not yet available. We show no purchase link until a book is published."]},"Covers shown for upcoming books are previews or drafts and may change before publication. We do not give prices, ISBNs or release dates unless they are confirmed. Prices and availability are set by the retailer, not by us."]],
-["5. Amazon external links",["The **Buy on Amazon** button opens Amazon’s website. Your purchase is a transaction between you and Amazon, and Amazon’s terms, privacy notice, shipping and return policies apply. We do not process payments or orders and never see your payment details.","[CONFIRM: whether Little Seeds earns commissions on Amazon sales, for example through Amazon Associates. If it does, a required disclosure must be added here. ATTORNEY: confirm the wording.]"]],
-["6. Website content and educational resources",["Our content is for general information and for use by families, schools and churches. Faith-based content reflects Christian beliefs. Learning resources for parents and educators are planned but not yet available. When they are, they are provided for personal and classroom use only and may be updated or removed.","Nothing on this site is professional, legal, medical or counseling advice. Parents and educators should decide whether a book or resource suits a particular child."]],
-["7. Permitted and prohibited use",["You may browse the site, share links to it, and use the contact form for genuine questions. You may not:",{ul:["break any law or infringe anyone’s rights","try to disrupt the site, test its security, or gain access you are not given","send spam, malware or harmful code","use automated tools to copy the site or overload it [ATTORNEY: scope of this limit]","copy or reuse our content beyond what section 3 allows","send us personal information about a child through the site"]},"We may block access if these rules are broken."]],
-["8. Accuracy of website information",["We work to keep the site accurate, but it may contain mistakes or be out of date. Book descriptions, status labels, links and contact details can change. A “Coming Soon” or “In Development” label is not a promise that a book will be released by any date. We cannot guarantee that the site will always be available."]],
-["9. External services and links",["The site links to other websites, such as Amazon, and loads fonts from Google Fonts (see our Privacy Policy). A link is not an endorsement. We do not control other sites or services and are not responsible for their content or practices. Their own terms and privacy policies apply.","The contact form and newsletter sign-up are not connected yet. Until they are, please email us directly. Any service we add later, such as a form or email provider, will be covered by its own terms and listed in our Privacy Policy."]],
-["10. Limitation of liability",["The site is provided “as is” and “as available.” To the fullest extent the law allows, Little Seeds is not liable for indirect or consequential losses from using the site or from third-party sites and services linked from it. Nothing in these terms limits any right or liability that cannot be limited by law.","[ATTORNEY: this section must be written or approved by a qualified attorney. The wording above is a plain-language placeholder only.]"]],
-["11. Children’s use of the website",["This site is written for parents, educators, churches, schools and libraries. Children under 13 should use it only with a parent or guardian, and should not send us personal information. Parents and guardians are responsible for their children’s use of the internet. Our handling of children’s information is described in the Privacy Policy.","[ATTORNEY: whether these terms fit the site’s audience, given the COPPA questions raised in the Privacy Policy draft.]"]],
-["12. Changes to the terms",["We may update these terms as the site changes. We will post the new version on this page and change the date. For significant changes we will also [CONFIRM: show a notice on the website and notify subscribers by email]. Please check this page from time to time.","[ATTORNEY: whether continued use can count as acceptance of changed terms.]"]],
-["13. Contact information",[{table:[["Item","Detail"],["Company","Little Seeds Children’s Books [CONFIRM: full legal name]"],["Founder","Joseph Mutabazi"],["Email","mutabazi3907@gmail.com"],["Phone","832-815-3907"],["Mailing address","[CONFIRM: business mailing address, not a residential address]"],["Website","[CONFIRM: final public address]"]]}]],
-["14. Governing law",["These terms will be governed by the laws of [ATTORNEY: state or jurisdiction to be chosen], and disputes will be handled in [ATTORNEY: venue and any dispute process]. Little Seeds has not yet confirmed a registered business entity or legal jurisdiction, so none is stated here."]]
-]};
-function inl(t){var h=esc(t);
-h=h.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
-h=h.replace(/\[ATTORNEY:\s*([^\]]*)\]/g,function(m,a){return '<details class="att"><summary>Attorney review</summary>'+a+'</details>'});
-h=h.replace(/\[ATTORNEY\]/g,'<mark class="todo">[ATTORNEY]</mark>');
-h=h.replace(/\[(CONFIRM[^\]]*)\]/g,'<mark class="todo">[$1]</mark>');
-h=h.replace(/mutabazi3907@gmail\.com/g,'<a href="mailto:mutabazi3907@gmail.com">mutabazi3907@gmail.com</a>');
-h=h.replace(/832-815-3907/g,'<a href="tel:+18328153907">832-815-3907</a>');
-return h}
-function legal(doc,target){var h='<h1>'+doc.h+'</h1><p class="note">Draft pending legal review. Not yet final.</p>';
-doc.sections.forEach(function(sec){h+='<h2>'+esc(sec[0])+'</h2>';sec[1].forEach(function(b){
-if(typeof b==="string"){h+=/^\[ATTORNEY:/.test(b)?inl(b):'<p>'+inl(b)+'</p>'}
-else if(b.ul){h+='<ul>'+b.ul.map(function(x){return '<li>'+inl(x)+'</li>'}).join('')+'</ul>'}
-else if(b.table){h+='<div class="tw"><table><thead><tr>'+b.table[0].map(function(c){return '<th>'+esc(c)+'</th>'}).join('')+'</tr></thead><tbody>'+b.table.slice(1).map(function(r){return '<tr>'+r.map(function(c){return '<td>'+inl(c)+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table></div>'}})});
-$(target).innerHTML=h}
-legal(PRIV,"#legal-privacy");legal(TERMS,"#legal-terms");
-var DESC={home:"Little Seeds Children’s Books is an independent publisher of Christian and general educational children’s books by Joseph Mutabazi.",books:"Browse and search the Little Seeds Children’s Books catalogue by category, collection and age group.",about:"The story, mission, vision and publishing philosophy behind Little Seeds Children’s Books.",founder:"Joseph Mutabazi is a Christian author, educator, and the founder of Little Seeds Children’s Books.",mission:"Planting Seeds Beyond the Pages: our goals for children’s literacy, book access and community partnerships.",resources:"Resources for parents and educators from Little Seeds Children’s Books, coming as they are published.",contact:"Contact Little Seeds Children’s Books by email or phone.",privacy:"Privacy Policy draft for Little Seeds Children’s Books, pending legal review.",terms:"Terms of Use draft for Little Seeds Children’s Books, pending legal review."};
-function setDesc(t){var m=document.querySelector('meta[name="description"]');if(m&&t)m.setAttribute("content",t)}
-var VIEWS=["home","books","about","founder","mission","resources","contact","privacy","terms"];
-function route(){var h=location.hash.slice(1)||"home",v=h,m=h.indexOf("book-")===0;
-if(m){v="book";detail(h.slice(5))}else if(VIEWS.indexOf(h)<0)v="home";
-document.querySelectorAll(".view").forEach(function(e){e.classList.toggle("on",e.id==="v-"+v)});
-document.querySelectorAll("nav a").forEach(function(a){var t=a.getAttribute("href").slice(1);if(t===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
-if(!m)document.title=$("#v-"+v).dataset.title;setDesc(m?(BOOKS.filter(function(x){return x.id===h.slice(5)})[0]||{}).desc:DESC[v]);window.scrollTo(0,0);var nv=$("#nav");nv.classList.remove("open");$(".menu").setAttribute("aria-expanded","false");if(window.__navd)$("#main").focus({preventScroll:true})}
-window.addEventListener("hashchange",function(){window.__navd=1;route()});route();
-$(".menu").addEventListener("click",function(){var o=$("#nav").classList.toggle("open");this.setAttribute("aria-expanded",o?"true":"false")});
-var T0=Date.now();
-document.querySelectorAll("form").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var ok=true,out=$(".out",f);out.textContent="";
-f.querySelectorAll(".err").forEach(function(x){x.textContent=""});
-function bad(n,m){var i=f.elements[n];i.parentNode.querySelector(".err").textContent=m;if(ok)i.focus();ok=false}
-var em=f.elements.email.value.trim();
-if(f.dataset.kind==="contact"){if(!f.elements.name.value.trim())bad("name","Enter your name.");}
-if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em))bad("email","Enter a valid email address.");
-if(f.dataset.kind==="contact"){if(!f.elements.subject.value.trim())bad("subject","Enter a subject.");if(f.elements.message.value.trim().length<10)bad("message","Write at least a short message.")}
-if(!ok)return;if(f.elements.website.value||Date.now()-T0<2500){out.textContent="Thanks.";return}
-var ep=f.dataset.kind==="contact"?CONFIG.formEndpoint:CONFIG.newsletterEndpoint;
-if(!ep){out.textContent="This form is not connected to an email service yet, so nothing was sent.";return}
-var btn=$("button[type=submit]",f);btn.disabled=true;out.textContent="Sending...";
-var fd=new FormData(f);fd.delete("website");
-fetch(ep,{method:"POST",body:fd,headers:{Accept:"application/json"}}).then(function(r){if(!r.ok)throw new Error(r.status);out.textContent=f.dataset.kind==="contact"?"Message sent. Thank you, we will reply by email.":"You are subscribed. Thank you.";f.reset()}).catch(function(){out.textContent="Sending failed. Check your connection and try again, or email us directly."}).then(function(){btn.disabled=false})})});
-if(CONFIG.formEndpoint)document.querySelectorAll("#v-contact .note").forEach(function(n){if(/not connected/.test(n.textContent))n.hidden=true});
-if(CONFIG.newsletterEndpoint)document.querySelectorAll("#v-home .news p").forEach(function(n){if(/not being delivered/.test(n.textContent))n.hidden=true});
-</script>
+<p class="p1"><span class="s1">Skip to content</span></p>
+<p class="p2"><span class="s2"><b>Little Seeds</b><b></b></span></p>
+<p class="p3"><span class="s2">Home</span></p>
+<p class="p3"><span class="s2">Our Books</span></p>
+<p class="p3"><span class="s2">About</span></p>
+<p class="p3"><span class="s2">Founder</span></p>
+<p class="p3"><span class="s2">Community</span></p>
+<p class="p3"><span class="s2">Resources</span></p>
+<p class="p3"><span class="s2">Contact</span></p>
+<p class="p4"><span class="s3"></span><br></p>
+<p class="p5"><span class="s4"><b>Planting Seeds. Growing Minds. Shaping Generations.</b><b></b></span></p>
+<p class="p5"><span class="s4">One book. One little heart. One meaningful seed at a time.</span></p>
+<p class="p6"><span class="s5"><a href="mailto:mutabazi3907@gmail.com">mutabazi3907@gmail.com</a></span><span class="s6"> · <a href="tel:+18328153907"><span class="s7">832-815-3907</span></a></span></p>
+<p class="p5"><span class="s8">Privacy Policy</span><span class="s4"> · </span><span class="s8">Terms of Use</span><span class="s4"> · © Little Seeds Children’s Books</span></p>
 </body>
 </html>
