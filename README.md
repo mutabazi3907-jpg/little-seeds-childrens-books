@@ -1,41 +1,38 @@
 # Little Seeds Children's Books — Website
 
-Static website (one `index.html`, images in `images/`). No build step, no server code, no secrets.
-Pages use hash links (`#books`, `#terms`, ...), so everything works on GitHub Pages without rewrite rules.
-All asset paths are relative, so the site works at a project URL (`https://USER.github.io/REPO/`) and at a custom domain.
+Static website: one `index.html`, images in `images/`. No build step, no server code, no secrets in the files.
+Pages use hash links (`#books`, `#terms`, ...), so everything works on GitHub Pages without rewrite rules. Asset paths are relative.
+
+Live site: https://mutabazi3907-jpg.github.io/little-seeds-childrens-books/
 
 ## Deploy on GitHub Pages
-1. Create a GitHub repository (for example `little-seeds-site`).
-2. Upload the CONTENTS of this folder to the repository root, so `index.html` sits at the top level (not inside a subfolder). Include `images/` and the hidden `.nojekyll` file.
-   - Web: Add file > Upload files > drag everything in > Commit.
-   - Or git: `git init && git add . && git commit -m "Initial site" && git branch -M main && git remote add origin <repo-url> && git push -u origin main`
-3. Repository Settings > Pages > Build and deployment: Source = "Deploy from a branch", Branch = `main`, Folder = `/ (root)` > Save.
-4. Wait 1-3 minutes. The site appears at `https://USER.github.io/REPO/`.
-5. Open it and check: all nine pages, each book page, the Amazon button on *The Little Boy Who Learned to Share*, dark mode, and phone width.
-
-## Custom domain (optional)
-1. Settings > Pages > Custom domain: enter your domain (e.g. `www.yourdomain.com`) > Save. GitHub creates a `CNAME` file in the repo.
-2. At your domain registrar, add DNS records: for `www`, a CNAME to `USER.github.io`; for an apex domain, A records to 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 (confirm current values in GitHub's docs).
-3. When the certificate is ready, tick "Enforce HTTPS".
+The repository is already set up (Settings > Pages > Deploy from a branch > `main` > `/ (root)`). To release an update:
+1. In the repository, choose Add file > Upload files.
+2. Drag the changed files straight from Finder or File Explorer. Do not open and re-save them in a text editor.
+3. Commit directly to `main`. The site updates in 1-3 minutes (the browser may cache pages for about 10 minutes, so hard-refresh).
 
 ## Files
 | File | Purpose |
 |---|---|
 | `index.html` | Entire site: 9 pages, styles, scripts, book catalogue (`BOOKS` list), Privacy and Terms text (`PRIV`, `TERMS`) |
-| `images/little-boy.webp`, `little-boy-sm.webp` | Cover, *The Little Boy Who Learned to Share* (full and thumbnail) |
-| `images/who-made-everything.webp`, `-sm.webp` | Cover preview, *Who Made Everything?* (draft/low-res, replace with final) |
-| `images/little-bird.webp`, `-sm.webp` | Draft cover, *The Little Bird Who Lost Her Way Home* |
+| `images/little-boy.webp`, `little-boy-sm.webp` | Cover, *The Little Boy Who Learned to Share* |
+| `images/who-made-everything.webp`, `-sm.webp` | Draft cover preview, *Who Made Everything?* (replace with the final cover) |
+| `images/little-bird.webp`, `-sm.webp` | Cover, *The Little Bird Who Lost Her Way Home* |
 | `images/joseph-mutabazi.webp` | Founder photo |
+| `images/og-image.png` | Social sharing image |
+| `favicon.svg`, `robots.txt`, `sitemap.xml` | Site icon and search-engine files |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
-| `README.md` | This file (may be deleted from the repo; harmless if left) |
+| `README.md` | This file (harmless if deleted) |
 
-## Still disconnected / to configure
-- **Contact form and newsletter are NOT connected.** Submissions go nowhere, and the site tells visitors so. To connect: in `index.html` find `var CONFIG={formEndpoint:"",newsletterEndpoint:""};` and paste public endpoint URLs (e.g. a Formspree form URL; a Kit or Mailchimp form-action URL). The "not connected" notices hide automatically once set. Never paste private API keys.
-- **Fonts:** loaded from Google Fonts (external). The Privacy Policy discloses this; self-hosting is optional and needs attorney/owner decision.
-- **No sitemap.xml, robots.txt, social-sharing image or favicon** are included (none were supplied or approved). Add them after the public URL is known; add `<meta property="og:image">` pointing to the full URL of an approved image.
-- **Privacy Policy and Terms are drafts** with highlighted [CONFIRM] and attorney-review items. Fill the website address and mailing address, and have an attorney review before launch.
-- Social media links are not included (none supplied).
+## Connected services
+- **Contact form:** sends to Formspree (`CONFIG.formEndpoint` in `index.html`). The success message appears only after Formspree reports success; otherwise the visitor sees a failure message.
+- **Newsletter:** Kit (formerly ConvertKit), inline form, Form ID 10168705, loaded with Kit's script `https://f.convertkit.com/ckjs/ck.5.js` (loaded once). The form is Kit's official embed, styled to match the site. It does not use pop-ups, slide-ins or sticky bars.
+- **Fonts:** Google Fonts (external).
+- The Privacy Policy and Terms disclose these services. Do not add private API keys to the site.
+
+## Still to complete before the policies are final
+- Privacy Policy and Terms are **drafts** pending attorney review. Highlighted [CONFIRM] items and "Attorney review" boxes are unresolved. Add the business mailing address, legal entity details and effective date only when confirmed.
 - Replace the *Who Made Everything?* cover with the final high-resolution original when available.
 
-## Maintaining
-Add books by adding an entry to the `BOOKS` list in `index.html`; change `status` (Published / Coming Soon / In Development) and fill `amazon` only when a book is published. Change a cover by replacing the image file and updating `cover` / `coverSm`.
+## Maintaining books
+Edit the `BOOKS` list in `index.html`. `status` is `Published`, `Coming Soon` or `In Development`. Fill `amazon` only when a book is published and its link is verified. Also update the book's entry in the JSON-LD block near the top of `index.html` and the Amazon links shown elsewhere.
