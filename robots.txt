@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mutabazi3907-jpg.github.io/little-seeds-childrens-books/sitemap.xml
