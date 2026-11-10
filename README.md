@@ -14,12 +14,16 @@ The repository is already set up (Settings > Pages > Deploy from a branch > `mai
 ## Files
 | File | Purpose |
 |---|---|
-| `index.html` | Entire site: 9 pages, styles, scripts, book catalogue (`BOOKS` list), Privacy and Terms text (`PRIV`, `TERMS`) |
+| `index.html` | Entire site: 14 views (home, books, resources, parents-educators, church-school, catalogue, sponsor, partnerships, about, founder, mission, contact, privacy, terms), styles, scripts, book catalogue (`BOOKS` list), Privacy and Terms text (`PRIV`, `TERMS`) |
 | `images/little-boy.webp`, `little-boy-sm.webp` | Cover, *The Little Boy Who Learned to Share* |
 | `images/who-made-everything.webp`, `-sm.webp` | Draft cover preview, *Who Made Everything?* (replace with the final cover) |
 | `images/little-bird.webp`, `-sm.webp` | Cover, *The Little Bird Who Lost Her Way Home* |
 | `images/joseph-mutabazi.webp` | Founder photo |
 | `images/og-image.png` | Social sharing image |
+| `images/logo-temporary.png` | TEMPORARY logo crop (462×270). Replace this one file with the original logo; every page uses it. |
+| `images/flyers/`, `images/resources/` | Web previews of the flyers, catalogue and kits |
+| `downloads/` | Public digital PDFs only (activity pack, partnership kit, catalogue, six flyers). Print-bleed files, editable sources and production reports are NOT stored here |
+| `resources/`, `parents-educators/`, `church-school/`, `partnerships/`, `catalogue/` | Small redirect pages so these URLs work and carry their own title and description; they send visitors to the matching `#` view |
 | `favicon.svg`, `robots.txt`, `sitemap.xml` | Site icon and search-engine files |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 | `README.md` | This file (harmless if deleted) |
@@ -36,3 +40,9 @@ The repository is already set up (Settings > Pages > Deploy from a branch > `mai
 
 ## Maintaining books
 Edit the `BOOKS` list in `index.html`. `status` is `Published`, `Coming Soon` or `In Development`. Fill `amazon` only when a book is published and its link is verified. Also update the book's entry in the JSON-LD block near the top of `index.html` and the Amazon links shown elsewhere.
+
+## Downloads and Book 3
+The Book 3 activities and kit pages are labeled *awaiting manuscript verification* inside the PDFs and on the site. Do not remove those labels until the Book 3 manuscript has been checked. Privacy, Terms and Sponsor wording remain drafts pending attorney review.
+
+## Logo
+The logo is a temporary crop. To replace it, overwrite `images/logo-temporary.png` (keep roughly a 462:270 aspect or update the `width`/`height` attributes in `index.html`).
