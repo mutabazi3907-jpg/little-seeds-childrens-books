@@ -43,7 +43,7 @@ Only public files belong in this repository. Keep print-bleed files, editable so
 Edit the `BOOKS` list in `index.html`. `status` is `Published`, `Coming Soon` or `In Development`. Fill `amazon` only when a book is published and its link is verified. Also update the book's entry in the JSON-LD block near the top of `index.html` and the Amazon links shown elsewhere.
 
 ## Downloads and Book 3
-The Book 3 activities and kit pages are labeled *awaiting manuscript verification* inside the PDFs and on the site. Do not remove those labels until the Book 3 manuscript has been checked. Privacy, Terms and Sponsor wording remain drafts pending attorney review.
+The Book 3 activities (Activity and Learning Pack, pages 20–29) have been reviewed against the approved Book 3 manuscript, and the former “awaiting manuscript verification” labels have been removed from the site, the pack and the Partnership Kit. Privacy, Terms and Sponsor wording remain drafts pending attorney review.
 
 ## Logo
 The logo is a temporary crop. To replace it, overwrite `images/logo-temporary.png` (keep roughly a 462:270 aspect or update the `width`/`height` attributes in `index.html`).
