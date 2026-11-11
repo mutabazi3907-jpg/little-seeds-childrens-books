@@ -3,7 +3,7 @@
 Static website: one `index.html`, images in `images/`. No build step, no server code, no secrets in the files.
 Pages use hash links (`#books`, `#terms`, ...), so everything works on GitHub Pages without rewrite rules. Asset paths are relative.
 
-Live site: https://mutabazi3907-jpg.github.io/little-seeds-childrens-books/
+Live site: https://www.littleseedbookshop.com/
 
 ## Deploy on GitHub Pages
 The site is published by GitHub Pages from the `main` branch (Settings > Pages > Deploy from a branch > `main` > `/ (root)`). Do not commit changes straight to `main`. To release an update:
