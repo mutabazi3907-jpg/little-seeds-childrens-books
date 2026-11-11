@@ -36,14 +36,14 @@ Only public files belong in this repository. Keep print-bleed files, editable so
 - The Privacy Policy and Terms disclose these services. Do not add private API keys to the site.
 
 ## Still to complete before the policies are final
-- Privacy Policy and Terms are **drafts** pending attorney review. Highlighted [CONFIRM] items and "Attorney review" boxes are unresolved. Add the business mailing address, legal entity details and effective date only when confirmed.
+- The Privacy Policy is published. The Terms of Use are published without internal review markers. Open legal and privacy questions are tracked in an internal list that is not published. The business mailing address is intentionally not published.
 - Replace the *Who Made Everything?* cover with the final high-resolution original when available.
 
 ## Maintaining books
 Edit the `BOOKS` list in `index.html`. `status` is `Published`, `Coming Soon` or `In Development`. Fill `amazon` only when a book is published and its link is verified. Also update the book's entry in the JSON-LD block near the top of `index.html` and the Amazon links shown elsewhere.
 
 ## Downloads and Book 3
-The Book 3 activities (Activity and Learning Pack, pages 20–29) have been reviewed against the approved Book 3 manuscript, and the former “awaiting manuscript verification” labels have been removed from the site, the pack and the Partnership Kit. Privacy, Terms and Sponsor wording remain drafts pending attorney review.
+The Book 3 activities (Activity and Learning Pack, pages 20–29) have been reviewed against the approved Book 3 manuscript, and the former “awaiting manuscript verification” labels have been removed from the site, the pack and the Partnership Kit.
 
 ## Logo
 The logo is a temporary crop. To replace it, overwrite `images/logo-temporary.png` (keep roughly a 462:270 aspect or update the `width`/`height` attributes in `index.html`).
