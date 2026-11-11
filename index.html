@@ -19,7 +19,7 @@ function t(s,n){return String(s||"").replace(/\s+/g," ").trim().slice(0,n||80)}
 function view(a){var v=a&&a.closest&&a.closest(".view");return v?v.id.replace(/^v-/,""):"site"}
 window.lsTrack=function(name,params){try{gtag("event",name,params||{})}catch(e){}};
 /* One page_view per route. Called at the end of route() in the main script. Only the URL and page title are sent. */
-window.lsPageView=function(){try{var h=location.hash||"";if(h===last)return;last=h;
+window.lsPageView=function(){try{var h=location.hash||"",r=h.slice(1);if(r&&r.indexOf("book-")!==0&&(!window.VIEWS||VIEWS.indexOf(r)<0))h="#home";/* unknown hashes (e.g. the skip link #main) display Home, so they count as Home */var k=h||"#home";if(k===last)return;last=k;
 gtag("event","page_view",{page_location:location.origin+location.pathname+h,page_title:document.title})}catch(e){}};
 /* Delegated click tracking. Sends only fixed labels (section, book title, file name). Never form values, names, emails or message text. */
 document.addEventListener("click",function(e){try{
