@@ -6,6 +6,51 @@
 <meta name="description" content="Little Seeds Children’s Books: Christian and general educational children’s books by Joseph Mutabazi. Planting Seeds. Growing Minds. Shaping Generations.">
 <title>Little Seeds Children’s Books</title>
 <meta property="og:type" content="website"><meta property="og:site_name" content="Little Seeds Children’s Books"><meta property="og:title" content="Little Seeds Children’s Books"><meta property="og:description" content="Planting Seeds. Growing Minds. Shaping Generations."><meta property="og:url" content="https://www.littleseedbookshop.com/"><meta property="og:image" content="https://www.littleseedbookshop.com/images/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Little Seeds Children’s Books: Planting Seeds. Growing Minds. Shaping Generations., with the cover of The Little Boy Who Learned to Share"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://www.littleseedbookshop.com/images/og-image.png"><link rel="canonical" href="https://www.littleseedbookshop.com/"><link rel="icon" type="image/svg+xml" href="favicon.svg"><meta name="theme-color" content="#184930">
+<!-- Google Analytics 4 (Google tag), loaded once for the whole site. Measurement ID: G-ND02BQJCQ9 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND02BQJCQ9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag("js",new Date());
+/* send_page_view is off because this site changes "pages" with #hash routes; lsPageView() below sends exactly one page_view per route, including the first. */
+gtag("config","G-ND02BQJCQ9",{send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false});
+(function(){
+var last=null;
+function t(s,n){return String(s||"").replace(/\s+/g," ").trim().slice(0,n||80)}
+function view(a){var v=a&&a.closest&&a.closest(".view");return v?v.id.replace(/^v-/,""):"site"}
+window.lsTrack=function(name,params){try{gtag("event",name,params||{})}catch(e){}};
+/* One page_view per route. Called at the end of route() in the main script. Only the URL and page title are sent. */
+window.lsPageView=function(){try{var h=location.hash||"";if(h===last)return;last=h;
+gtag("event","page_view",{page_location:location.origin+location.pathname+h,page_title:document.title})}catch(e){}};
+/* Delegated click tracking. Sends only fixed labels (section, book title, file name). Never form values, names, emails or message text. */
+document.addEventListener("click",function(e){try{
+var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;
+var href=a.getAttribute("href")||"",where=view(a),txt=t(a.textContent);
+var isAmz=/^https?:\/\/([a-z0-9-]+\.)?amazon\.com\//i.test(href);
+if(isAmz){var m=href.match(/(?:\/dp\/|\/product\/)([A-Z0-9]{10})/),bk="";
+if(m&&window.BOOKS){for(var i=0;i<BOOKS.length;i++){if(BOOKS[i].amazon&&BOOKS[i].amazon.indexOf(m[1])>-1){bk=BOOKS[i].title;break}}}
+lsTrack("amazon_click",{book_title:bk||"unknown",asin:m?m[1]:"",link_location:where,link_text:txt});
+if(where==="sponsor")lsTrack("sponsor_book_interaction",{interaction_type:"amazon_sponsor_click",book_title:bk||"unknown"});return}
+var d=href.match(/downloads\/([^\/?#]+\.pdf)/i);
+if(d){var f=d[1].replace(/\.pdf$/i,""),ev="pdf_download";
+if(f.indexOf("activity-and-learning-pack")>-1)ev="activity_pack_download";
+else if(f.indexOf("partnership-kit")>-1)ev="partnership_kit_download";
+else if(f.indexOf("publishing-catalogue")>-1)ev="catalogue_download";
+else if(f.indexOf("flyer")===0)ev="flyer_download";
+lsTrack(ev,{file_name:f+".pdf",file_action:a.hasAttribute("download")?"download":"open",link_location:where,link_text:txt});return}
+if(/^mailto:/i.test(href)){lsTrack("email_click",{link_location:where});
+if(where==="partnerships"||where==="church-school")lsTrack("partnership_inquiry_click",{inquiry_type:"email",link_location:where});
+if(where==="sponsor")lsTrack("sponsor_book_interaction",{interaction_type:"email"});return}
+if(href==="#contact"){
+if(where==="partnerships"||where==="church-school")lsTrack("partnership_inquiry_click",{inquiry_type:"contact_form",link_location:where});
+if(where==="sponsor")lsTrack("sponsor_book_interaction",{interaction_type:"contact_form"});
+window.__lsFrom=where;return}
+if(where==="sponsor"&&/^#book-/.test(href))lsTrack("sponsor_book_interaction",{interaction_type:"about_book",book_title:(function(){var id=href.slice(6);if(window.BOOKS)for(var i=0;i<BOOKS.length;i++)if(BOOKS[i].id===id)return BOOKS[i].title;return"unknown"})()});
+}catch(x){}});
+/* Kit email sign-up form: counts a submit attempt only (Kit confirms by email). No field values are sent. */
+document.addEventListener("submit",function(e){try{var f=e.target;
+if(f&&f.classList&&f.classList.contains("formkit-form"))lsTrack("newsletter_signup_submit",{form_name:"kit_newsletter",link_location:view(f)})}catch(x){}},true);
+})();
+</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Little Seeds Children’s Books","slogan":"Planting Seeds. Growing Minds. Shaping Generations.","founder":{"@type":"Person","name":"Joseph Mutabazi"},"email":"mutabazi3907@gmail.com","telephone":"+1-832-815-3907"},{"@type":"Person","name":"Joseph Mutabazi","jobTitle":"Founder, Little Seeds Children’s Books"},{"@type":"Book","name":"The Little Boy Who Learned to Share","author":{"@type":"Person","name":"Joseph Mutabazi"},"url":"https://www.amazon.com/dp/B0HQZKYJDV"},{"@type":"Book","name":"Who Made Everything? A Little Book About God the Creator","author":{"@type":"Person","name":"Joseph Mutabazi"},"bookFormat":"https://schema.org/Paperback","url":"https://www.amazon.com/gp/product/B0HR6DZBR1/ref=ewc_pr_img_1?smid=A1Y53T3O3Q25L8&psc=1"},{"@type":"Book","name":"The Little Bird Who Lost Her Way Home","author":{"@type":"Person","name":"Joseph Mutabazi"},"url":"https://www.amazon.com/dp/B0HR3NCCSS"}]}</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@500;600;700&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
 <style>
@@ -413,7 +458,7 @@ function route(){var h=location.hash.slice(1)||"home",v=h,m=h.indexOf("book-")==
 if(m){v="book";detail(h.slice(5))}else if(VIEWS.indexOf(h)<0)v="home";
 document.querySelectorAll(".view").forEach(function(e){e.classList.toggle("on",e.id==="v-"+v)});
 document.querySelectorAll("nav a").forEach(function(a){var t=a.getAttribute("href").slice(1);if(t===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
-if(!m)document.title=$("#v-"+v).dataset.title;setDesc(m?(BOOKS.filter(function(x){return x.id===h.slice(5)})[0]||{}).desc:DESC[v]);window.scrollTo(0,0);var nv=$("#nav");nv.classList.remove("open");$(".menu").setAttribute("aria-expanded","false");if(window.__navd)$("#main").focus({preventScroll:true})}
+if(!m)document.title=$("#v-"+v).dataset.title;setDesc(m?(BOOKS.filter(function(x){return x.id===h.slice(5)})[0]||{}).desc:DESC[v]);window.scrollTo(0,0);var nv=$("#nav");nv.classList.remove("open");$(".menu").setAttribute("aria-expanded","false");if(window.__navd)$("#main").focus({preventScroll:true});window.lsPageView&&window.lsPageView()}
 window.addEventListener("hashchange",function(){window.__navd=1;route()});route();
 $(".menu").addEventListener("click",function(){var o=$("#nav").classList.toggle("open");this.setAttribute("aria-expanded",o?"true":"false")});
 var T0=Date.now();
@@ -429,7 +474,7 @@ var ep=f.dataset.kind==="contact"?CONFIG.formEndpoint:CONFIG.newsletterEndpoint;
 if(!ep){out.textContent="This form is not connected to an email service yet, so nothing was sent.";return}
 var btn=$("button[type=submit]",f);btn.disabled=true;out.textContent="Sending...";
 var fd=new FormData(f);fd.delete("_gotcha");
-setTimeout(function(){fetch(ep,{method:"POST",body:fd,headers:{Accept:"application/json"}}).then(function(r){if(!r.ok)throw new Error(r.status);out.textContent=f.dataset.kind==="contact"?"Message sent. Thank you, we will reply by email.":"You are subscribed. Thank you.";f.reset()}).catch(function(){out.textContent="Sending failed. Check your connection and try again, or email us directly."}).then(function(){btn.disabled=false})},Math.max(0,2500-(Date.now()-T0)))})});
+setTimeout(function(){fetch(ep,{method:"POST",body:fd,headers:{Accept:"application/json"}}).then(function(r){if(!r.ok)throw new Error(r.status);out.textContent=f.dataset.kind==="contact"?"Message sent. Thank you, we will reply by email.":"You are subscribed. Thank you.";window.lsTrack&&lsTrack(f.dataset.kind==="contact"?"contact_form_submit":"newsletter_signup_submit",{form_name:f.dataset.kind,referring_section:window.__lsFrom||"direct"});f.reset()}).catch(function(){out.textContent="Sending failed. Check your connection and try again, or email us directly."}).then(function(){btn.disabled=false})},Math.max(0,2500-(Date.now()-T0)))})});
 if(CONFIG.formEndpoint)document.querySelectorAll("#v-contact .note").forEach(function(n){if(/not connected/.test(n.textContent))n.hidden=true});
 if(CONFIG.newsletterEndpoint){document.querySelectorAll("#v-home .news p").forEach(function(n){if(/not being delivered/.test(n.textContent))n.hidden=true});document.querySelectorAll("#v-home .consent").forEach(function(n){n.hidden=false})}
 </script>
